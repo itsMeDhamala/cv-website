@@ -1,57 +1,123 @@
+/* Base Styles */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.8;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
 }
 
+/* Container */
 .container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
+/* Header */
 header {
-    background: #0073e6;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+  background: linear-gradient(90deg, #0073e6, #005bb5);
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 5px solid #005bb5;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+  margin: 0;
+  font-size: 2em;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 header p {
-    margin: 5px 0;
+  margin: 10px 0 0;
+  font-size: 1.2em;
+  opacity: 0.9;
 }
 
+/* Main Content */
 main {
-    padding: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Section Styles */
 section {
-    margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 section h2 {
-    color: #0073e6;
-    border-bottom: 2px solid #0073e6;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
+  color: #005bb5;
+  border-bottom: 3px solid #0073e6;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-size: 1.8em;
 }
 
 .job, .project {
-    margin-bottom: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background: #f9f9f9;
+  border-left: 5px solid #0073e6;
+  border-radius: 5px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
+.job:hover, .project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
-    background: #333;
-    color: #fff;
-    margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+  background: #333;
+  color: #fff;
+  margin-top: 30px;
+  font-size: 0.9em;
+  border-top: 3px solid #005bb5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2.2em;
+  }
+
+  header p {
+      font-size: 1em;
+  }
+
+  section h2 {
+      font-size: 1.5em;
+  }
+
+  .container {
+      padding: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  header {
+      padding: 20px 10px;
+  }
+
+  header h1 {
+      font-size: 1.7em;
+  }
+
+  header p {
+      font-size: 0.9em;
+  }
+
+  section h2 {
+      font-size: 1.2em;
+  }
 }
