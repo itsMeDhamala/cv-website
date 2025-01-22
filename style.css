@@ -17,16 +17,16 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(90deg, #4397eb, #4899eb);
+  background: linear-gradient(90deg, #267bd0, #2b7fd3);
   color: #fff;
   padding: 40px 20px;
   text-align: center;
-  border-bottom: 5px solid #73b4f5;
+  border-bottom: 5px solid #0653b1;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   
 }
 
-.custom-email {
+.custom-email:hover {
   color: #4dddf0; /* Optional: Color on hover */
   text-decoration: underline; /* Optional: Add underline on hover */
 }
