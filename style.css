@@ -17,12 +17,18 @@ body {
 
 /* Header */
 header {
-  background: linear-gradient(90deg, #0073e6, #005bb5);
+  background: linear-gradient(90deg, #1065b9, #0e65bc);
   color: #fff;
   padding: 40px 20px;
   text-align: center;
-  border-bottom: 5px solid #005bb5;
+  border-bottom: 5px solid #73b4f5;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.custom-email {
+  color: #4dddf0; /* Optional: Color on hover */
+  text-decoration: underline; /* Optional: Add underline on hover */
 }
 
 header h1 {
@@ -36,6 +42,7 @@ header p {
   margin: 10px 0 0;
   font-size: 1.2em;
   opacity: 0.9;
+  
 }
 
 /* Main Content */
